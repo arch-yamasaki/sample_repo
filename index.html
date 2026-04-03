@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sample_repo</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f1e8;
+        --panel: #fffdf8;
+        --text: #1f1a17;
+        --muted: #6d6258;
+        --accent: #b85c38;
+        --border: #e7dccf;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Georgia", "Times New Roman", serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, #f2d7b6 0, transparent 28rem),
+          linear-gradient(180deg, #f8f4ec 0%, var(--bg) 100%);
+      }
+
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 72px 24px;
+      }
+
+      .card {
+        background: color-mix(in srgb, var(--panel) 92%, white 8%);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        padding: 40px;
+        box-shadow: 0 20px 60px rgba(49, 31, 17, 0.08);
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        font-size: 0.9rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.5rem, 8vw, 4.5rem);
+        line-height: 0.95;
+      }
+
+      p {
+        margin: 20px 0 0;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+
+      .actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 28px;
+      }
+
+      a {
+        display: inline-block;
+        padding: 12px 18px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .primary {
+        background: var(--accent);
+        color: white;
+      }
+
+      .secondary {
+        border: 1px solid var(--border);
+        color: var(--text);
+        background: transparent;
+      }
+
+      @media (max-width: 640px) {
+        main {
+          padding: 32px 16px;
+        }
+
+        .card {
+          padding: 28px 22px;
+          border-radius: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <p class="eyebrow">Sample Repo</p>
+        <h1>Small page, ready to ship.</h1>
+        <p>
+          This is a simple static entry page for the repository. It gives you a
+          clean starting point that can be expanded into documentation, a demo,
+          or a small landing page.
+        </p>
+        <div class="actions">
+          <a class="primary" href="./README.md">Read README</a>
+          <a class="secondary" href="https://github.com/arch-yamasaki/sample_repo">View Repo</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
